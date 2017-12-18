@@ -1,0 +1,31 @@
+
+@import "../../theme.less";
+.main{
+  color: @c_app;
+  font-size: @d_font_h1;
+}
+@height : 1.5rem;
+.bar_bg{
+  padding: .4rem;
+}
+.tab {
+  display: inline-block;
+  padding: .3rem .7rem;
+  text-align: center;
+}
+
+.tab__selected {
+  // background-image: url("../public/Button/btn_icon.png");
+  background-size: 100% 100%;
+}
+.mainContextA{
+  width: 100%;
+  position: absolute;
+  top: @height;
+  left: 0;
+  bottom: 0;
+}
+.mainContext{
+  .mainContextA;
+  visibility: hidden;
+}

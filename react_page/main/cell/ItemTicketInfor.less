@@ -1,0 +1,47 @@
+@import "../../theme";
+@img_size : 0.5rem;
+.lineRow{
+  border: none;
+  // background-image: url("../user/images/input_PW.png");
+  background-size: cover;
+  margin: 0 @d_space_center;
+  width: 9.3rem;
+  height: 1.3rem;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.img{
+  float: left;
+  margin-left: 1rem;
+  margin-top: 0.25rem;
+  width: @img_size;
+  height: @img_size;
+}
+.lineTitle{
+  float: left;
+  margin-top: 0.45rem;
+  margin-left: @d_space_center;
+  width: 5rem;
+  height: auto;
+  font-size: @d_font_h2;
+  color: @c_font_yellow;
+}
+.refLineTitle{
+  .lineTitle;
+  margin-left: 1.2rem;
+}
+.lineImg{
+  .lineTitle;
+  float: right;
+  margin-top: 0.46rem;
+  width: @img_size;
+  height: @img_size;
+  margin-right: 1.2rem;
+}
+.myImg{
+  width: @img_size;
+  height: @img_size;
+}
+.hidden{
+  display: none;
+}

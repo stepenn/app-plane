@@ -1,0 +1,191 @@
+@import "../../../theme.less";
+@padding_my : 1rem;
+.main{
+  .css_layout_full;
+  .css_font_style1;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: @d_space_center @d_space_big;
+}
+.title{
+  padding: @d_space_center 0;
+  height: auto;
+  width: 100%;
+  font-size: @d_font_h1;
+  color: @c_title_black;
+}
+.bg{
+  margin-bottom: @d_space_center;
+  background: @c_rgba;
+  width: 9rem;
+  height: 5.4rem;
+  position: relative;
+}
+
+.idFrontBg{
+  position: absolute;
+  top: 0.3rem;
+  left: 0.66rem;
+  width: 7.68rem;
+  height: 4.8rem;
+  // background-image: url("../../user/certification/images/id_front.png");
+  background-size: cover;
+  border-radius: 0.2rem;
+}
+
+.idbackBg{
+  position: absolute;
+  top: 0.3rem;
+  left: 0.66rem;
+  width: 7.68rem;
+  height: 4.8rem;
+  // background-image: url("../../user/certification/images/id_back.png");
+  background-size: cover;
+  border-radius: 0.2rem;
+}
+.cerImgBg{
+  position: absolute;
+  top: 0.3rem;
+  left: 0.66rem;
+  width: 7.68rem;
+  height: 4.8rem;
+  border-radius: 0.2rem;
+}
+
+.addImg{
+  position: absolute;
+  left: 3.5rem;
+  top: @padding_my;
+  width: 2rem;
+  height: 2rem;
+  // background-image: url("../../user/certification/images/add_id.png");
+  background-size: cover;
+}
+.addTitle{
+  position: absolute;
+  left:0;
+  bottom: @padding_my;
+  width: 100%;
+  height: 1rem;
+  line-height: 1rem;
+  text-align: center;
+  font-size: @d_font_h1;
+  color: @c_font_yellow;
+}
+.hidden{
+  display: none;
+}
+.row{
+  margin: 0 @d_space_small;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  overflow: hidden;
+  .css_font;
+}
+.left{
+  float: left;
+  margin-top: 0.06rem;
+  background: @c_rgba;
+  text-align: center;
+  width: 0.4rem;
+  height: 0.4rem;
+  line-height: 0.4rem;
+  font-size: @d_font_h3;
+  border-radius: 100%;
+  color: @c_white;
+}
+.right{
+  float: right;
+  margin-bottom: @d_space_small;
+  width: 8.5rem;
+  height: auto;
+  overflow: hidden;
+}
+.submit{
+  display: block;
+  // background-image: url("../../user/images/submit_btn.png");
+  background-size: cover;
+  text-align: center;
+  margin-left: 3rem;
+  margin-top: 1rem;
+  width: 3rem;
+  height: 1.33rem;
+  line-height: 1.33rem;
+}
+
+
+
+.frame{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.loadCenter{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 36px;
+  height: 10px;
+}
+
+@-webkit-keyframes ball_beat {
+  50% {
+    opacity: 0.2;
+    -webkit-transform: scale(0.75);
+    transform: scale(0.75);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes ball_beat {
+  50% {
+    opacity: 0.2;
+    -webkit-transform: scale(0.75);
+    transform: scale(0.75);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+.ballBeat {
+  background-color: #a8a8a8;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  display: inline-block;
+  -webkit-animation: ball_beat 2s 0s infinite linear;
+  animation: ball_beat 2s 0s infinite linear;
+}
+
+.ballBeat2 {
+  composes: ballBeat;
+  margin-left: 3px;
+  -webkit-animation-delay: 0.35s !important;
+  animation-delay: 0.35s !important;
+}
+.ballBeat3 {
+  composes: ballBeat2;
+  -webkit-animation-delay: 0.35s !important;
+  animation-delay: 0.35s !important;
+}

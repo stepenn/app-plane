@@ -1,0 +1,134 @@
+.datepicker_modal {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    right:0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.6);
+    z-index: 999;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.4rem;
+}
+.datepicker_headerTable{
+    margin-left: 0.15rem;
+    width: 9.7rem;
+    height: 60px;
+    display: table;
+    border-bottom: 1px solid gray;
+
+    color: #d7981d;
+    font-weight: 900;
+    -webkit-text-stroke: 1px rgba(65, 17, 0, 0.45);
+}
+.datepicker_header {
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+    font-size: 0.5rem;
+    line-height: 0.5rem;
+}
+
+.datepicker_content {
+    height: 180px;
+    width: 100%;
+    display: table;
+}
+
+.datepicker_navbar {
+    margin-left: 0.15rem;
+    height: 40px;
+    width: 9.7rem;
+    border-top: 1px solid gray;
+    padding: 0;
+    display: table;
+}
+
+
+.datepicker_navbar_btn {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    color: #d7981d;
+    font-size: 0.4rem;
+}
+.dark {
+    width: 100%;
+    height: 280px;
+    position: absolute;
+    bottom: 0;
+}
+
+.android{
+    width: 100%;
+    height: 280px;
+    position: absolute;
+    bottom: 0;
+    /*background-image: url("http://10.0.0.89:3000/project/img/bb578fe9.rules.png");*/
+    background-size: cover;
+}
+.datepicker_wheel {
+    /*border-top: 1px solid #d7981d;*/
+    /*border-bottom: 1px solid #d7981d;*/
+    position: absolute;
+    height: 40px;
+    margin-top: -20px;
+    top: 50%;
+    left: 5%;
+    width: 90%;
+    background: rgba(200,100,100,0.3);
+    color: #d7981d;
+    font-weight: 900;
+    -webkit-text-stroke: 1px rgba(65, 17, 0, 0.45);
+}
+.datepicker-scroll {
+    list-style-type: none;
+}
+.scli {
+    color: #d7981d;
+    font-weight: 900;
+    -webkit-text-stroke: 1px rgba(65, 17, 0, 0.45);
+    height: 40px;
+    line-height: 40px;
+    font-size: 0.45rem;
+    cursor: pointer;
+    text-align: center;
+    list-style:none;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+
+.scli_d {
+    color:#dbdbdb;
+    height: 40px;
+    line-height: 40px;
+    font-size: 0.4rem;
+    cursor: pointer;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+
+.datepicker_col_1 {
+    height:180px;
+    display: table-cell;
+    text-align: center;
+
+}
+.datepicker_col_1_none {
+    height:180px;
+    display: none;
+    text-align: center;
+
+}
+.datepicker_viewport {
+    height: 180px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+

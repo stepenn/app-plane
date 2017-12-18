@@ -1,0 +1,63 @@
+@import "../../theme";
+@imgSize: 0.8rem;
+.cell{
+  position: relative;
+  margin: 0 @d_space_big;
+  width: 9rem;
+  background: @c_rgba;
+  .css_font;
+}
+.cellMain{
+  width: 7.5rem;
+  position: relative;
+  .css_space_row;
+  .css_border_bottom;
+  margin-left: @d_space_LineHead;
+}
+.refCellMain{
+  .cellMain;
+  margin-left: @d_space_small;
+  width: 8.5rem;
+}
+.img{
+  width: @imgSize;
+  padding-left: @d_space_center;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  background-size:@imgSize  auto ;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.imgLeft{
+  .img;
+  left: 3px;
+  right: auto;
+}
+.imgRight{
+  .img;
+  left: auto;
+  right: 0;
+}
+.center{
+  position: relative;
+  margin-right: @imgSize;
+  padding-right: 0.2rem;
+}
+.centerLeftNone{
+  composes: center;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.inLine{
+  display: inline-block;
+  width: 60%;
+  font-size: @d_font_h2;
+}
+.inLineRight{
+  .inLine;
+  text-align: right;
+  width: 40%;
+}

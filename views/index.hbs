@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>爱拼机</title>
+    <meta charset="utf-8">
+    <meta name="keywords" content="团飞就上爱拼机">
+    <meta name="description" content="团飞就上爱拼机">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <script src="https://og6593g2z.qnssl.com/fundebug.0.0.7.min.js"
+            apikey="c5a492e824c63063872d58d9cca38060a0aa612265b561babba41a87ec62cdbe"></script>
+    <script>
+        var releasestage = "development"; // releasestage指的是应用开发阶段，例如『开发』、『测试』、『生产』:
+
+//        development
+//        test
+//        production
+
+        if(releasestage){
+            fundebug.releasestage =releasestage;
+        }
+
+    </script>
+    <style>
+        html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            outline: 0;
+            font-size: 0.4rem;
+            vertical-align: baseline;
+            background: transparent;
+            font-family: "Microsoft YaHei";
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+            -webkit-touch-callout:none;
+            -webkit-user-select:none;
+            -khtml-user-select:none;
+            -moz-user-select:none;
+            -ms-user-select:none;
+            user-select:none;
+        }
+
+        html, body {
+            padding: 0px;
+            margin: 0px;
+            width: 100%;
+            height: 100%;
+            background: #ffffff;
+        }
+
+        p {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .deBugDiv{
+            position: fixed;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .rootDiv {
+            background:#ffffff;
+            position: fixed;
+            padding: 0px;
+            margin: 0px;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+        .rootDivLoading {
+            background: #ffffff;
+            position: absolute;
+            overflow: hidden;
+            pointer-events: none;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+
+        }
+        @-webkit-keyframes fadeInOut {
+            0% {
+                opacity:1;
+            }
+            25% {
+                opacity:0;
+            }
+            50% {
+                opacity: 0;
+            }
+            75% {
+                opacity:1;
+            }
+        }
+
+        .rootDivLoadingCenter {
+            position: absolute;
+            text-align: center;
+            top: 20%;
+            width: 80%;
+            left: 10%;
+            bottom: 10%;
+
+        }
+
+
+
+        .loading-page {
+          position: relative;
+          width: 100%;
+          height: 100%;
+          background-color: #60C7F2;
+        }
+        .loading-page * {
+          color: inherit;
+          font: inherit;
+        }
+        .loading-page .progress {
+          position: relative;
+          top: 2rem;
+          display: block;
+          width: 6rem;
+          margin: 0 auto;
+          text-align: center;
+        }
+        .loading-page .progress_text {
+          display: block;
+          font-size: .5rem;
+          font-weight: normal;
+          line-height: 2;
+          color: #d5171d;
+        }
+        .loading-page .progress_outer-bar {
+          display: block;
+          padding: 1px;
+          border-radius: 4px;
+          background-color: #fff;
+        }
+        .loading-page .progress_inner-bar {
+          display: block;
+          width: 0;
+          height: 6px;
+          border-radius: 3px;
+          background-color: #d5171d;
+        }
+        .loading-page .flying-area {
+          position: absolute;
+          top: 50%;
+          width: 10rem;
+          height: 6rem;
+          margin-top: -3rem;
+        }
+        .loading-page .clouds {
+          -webkit-animation: cloud-move 6s linear infinite;
+          animation: cloud-move 6s linear infinite;
+        }
+        .loading-page .cloud {
+          display: block;
+          width: 1.5rem;
+          height: 1rem;
+          background-size: 100% 100%;
+        }
+        .loading-page .cloud1 {
+          -webkit-transform: translate3d(1rem, 0, 0) scale(1, 1);
+          transform: translate3d(1rem, 0, 0) scale(1, 1);
+        }
+        .loading-page .cloud2 {
+          -webkit-transform: translate3d(7.3rem, 0.5rem, 0) scale(0.8, 0.8);
+          transform: translate3d(7.3rem, 0.5rem, 0) scale(0.8, 0.8);
+        }
+        .loading-page .cloud3 {
+          -webkit-transform: translate3d(2.5rem, 4rem, 0) scale(0.5, 0.5);
+          transform: translate3d(2.5rem, 4rem, 0) scale(0.5, 0.5);
+        }
+        .loading-page .cloud4 {
+          -webkit-transform: translate3d(5rem, 2.5rem, 0) scale(0.4, 0.4);
+          transform: translate3d(5rem, 2.5rem, 0) scale(0.4, 0.4);
+        }
+        .loading-page .cloud5 {
+          -webkit-transform: translate3d(8rem, 2rem, 0) scale(0.3, 0.3);
+          transform: translate3d(8rem, 2rem, 0) scale(0.3, 0.3);
+        }
+        .loading-page .cloud-container {
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+        .loading-page .cloud-container__left {
+          -webkit-transform: translate3d(-10rem, 0, 0);
+          transform: translate3d(-10rem, 0, 0);
+        }
+        @-webkit-keyframes cloud-move {
+          0% {
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+          }
+          100% {
+            -webkit-transform: translate3d(10rem, 0, 0);
+            transform: translate3d(10rem, 0, 0);
+          }
+        }
+        @keyframes cloud-move {
+          0% {
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+          }
+          100% {
+            -webkit-transform: translate3d(10rem, 0, 0);
+            transform: translate3d(10rem, 0, 0);
+          }
+        }
+        .loading-page .plane {
+          position: absolute;
+          top: 1rem;
+          display: block;
+          width: 4.2rem;
+          height: 3rem;
+          margin-left: 2.5rem;
+          background-size: 100% 100%;
+          -webkit-animation: plane-move 4s linear infinite;
+          animation: plane-move 4s linear infinite;
+        }
+        @-webkit-keyframes plane-move {
+          0% {
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+          }
+          50% {
+            -webkit-transform: translate3d(0, 1rem, 0);
+            transform: translate3d(0, 1rem, 0);
+          }
+          100% {
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+          }
+        }
+        @keyframes plane-move {
+          0% {
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+          }
+          50% {
+            -webkit-transform: translate3d(0, 1rem, 0);
+            transform: translate3d(0, 1rem, 0);
+          }
+          100% {
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+          }
+        }
+        .loading-page .plane_leaf {
+          position: absolute;
+          top: 0.18rem;
+          width: 0.3rem;
+          height: 3rem;
+          background-size: 100% 100%;
+          -webkit-animation: rotating-propeller 0.1s linear infinite;
+          animation: rotating-propeller 0.1s linear infinite;
+        }
+        @-webkit-keyframes rotating-propeller {
+          0% {
+            -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+          }
+          50% {
+            -webkit-transform: scale(1, 1.2);
+            transform: scale(1, 1.2);
+          }
+          100% {
+            -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+          }
+        }
+        @keyframes rotating-propeller {
+          0% {
+            -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+          }
+          50% {
+            -webkit-transform: scale(1, 1.2);
+            transform: scale(1, 1.2);
+          }
+          100% {
+            -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+          }
+        }
+        .loading-page .earth {
+          position: absolute;
+          bottom: -5.5rem;
+          width: 10rem;
+          height: 9.2rem;
+          background-size: 100% 100%;
+          -webkit-animation: rotating-earth 20s linear infinite;
+          animation: rotating-earth 20s linear infinite;
+        }
+        @-webkit-keyframes rotating-earth {
+          0% {
+            -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+          }
+          100% {
+            -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+          }
+        }
+        @keyframes rotating-earth {
+          0% {
+            -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+          }
+          100% {
+            -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+          }
+        }
+
+
+    </style>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui">
+  <script>
+    document.documentElement.style.fontSize = innerWidth / 10 + 'px'
+  </script>
+
+</head>
+<body>
+<div id="root"  class="rootDiv">
+</div>
+<div id="root_load"   class="rootDiv">
+
+    <div id="rootDivLoading" class="rootDivLoading">
+
+        <div class="loading-page">
+            <div class="progress">
+              <span class="progress_text"><span class="progress_number">1</span>%Loaded</span>
+                <div class="progress_outer-bar">
+                    <span class="progress_inner-bar"></span>
+                </div>
+            </div>
+            <div class="flying-area">
+                <div class="plane">
+                    <span class="plane_leaf"></span>
+                </div>
+            </div>
+            <span class="earth"></span>
+        </div>
+
+    </div>
+</div>
+<div id="elementToDrag" class="deBugDiv">
+
+</div>
+
+<script>
+  // 启动页
+  try{
+    (function () {
+      function getURL(url) {
+        return 'url("' + url + '")'
+      }
+      function createCloud(i) {
+        var cloudContainer = document.createElement('div')
+        cloudContainer.setAttribute('class', 'cloud-container ' + (i < 5 ? '' : 'cloud-container__left'))
+        var cloud = document.createElement('span')
+        cloud.setAttribute('class', 'cloud cloud' + (i % 5 + 1))
+        cloud.style.backgroundImage = getURL(bgCloud)
+        cloudContainer.appendChild(cloud)
+        return cloudContainer
+      }
+      function updateView(p) {
+        progressNumber.innerText = p
+        innerBar.style.width = p + '%'
+      }
+
+      var bgEarth = '/serverImg/loading/earth.png'
+      var bgPlane = '/serverImg/loading/plane.png'
+      var bgPlaneLeaf = '/serverImg/loading/plane-leaf.png'
+      var bgCloud = '/serverImg/loading/cloud.png'
+      var loadingPage = document.getElementsByClassName('loading-page')[0]
+      loadingPage.getElementsByClassName('earth')[0].style.backgroundImage = getURL(bgEarth)
+      loadingPage.getElementsByClassName('plane')[0].style.backgroundImage = getURL(bgPlane)
+      loadingPage.getElementsByClassName('plane_leaf')[0].style.backgroundImage = getURL(bgPlaneLeaf)
+      var flyingArea = loadingPage.getElementsByClassName('flying-area')[0]
+      var clouds = document.createElement('div')
+      clouds.className = 'clouds'
+      for (var i = 0; i < 10; i++) {
+        clouds.appendChild(createCloud(i))
+      }
+      flyingArea.appendChild(clouds)
+      var progressNumber = loadingPage.getElementsByClassName('progress_number')[0]
+      var innerBar = loadingPage.getElementsByClassName('progress_inner-bar')[0]
+      var p = 1
+      var intervalId
+      window.loadingCallBack = function (pro) {
+        if (pro < 100) { // 资源包下载进度
+          p = Math.floor((+pro) / 2)
+          updateView(p)
+        } else if (pro == 100) { // 资源包下载完成，开始下载并执行JS
+          if (p > 50) return
+          p = 50
+          updateView(p)
+          clearInterval(intervalId)
+          intervalId = setInterval(function () {
+            p++
+            if (p < 100) {
+              updateView(p)
+            } else {
+              clearInterval(intervalId)
+            }
+          }, 16)
+        } else if (pro < 0) { // 载入主页
+          p = 100
+          updateView(p)
+          clearInterval(intervalId)
+        }
+      }
+
+    })()
+  }catch(e){
+  }
+</script>
+
+<script>
+    var host = window.location.host;
+    if(window.location.href.indexOf("https")==0){
+        window.socketUrl = 'wss://'+host;
+    }else{
+        window.socketUrl = 'ws://'+host;
+    }
+</script>
+
+<script src="/app/downZip.js"></script>
+<script src="/js/socket.io.js"></script>
+<script src="/app/apinapi.js"></script>
+<script src="/app/index.js"></script>
+
+
+
+
+</body>
+
+</html>

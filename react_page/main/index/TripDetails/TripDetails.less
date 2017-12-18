@@ -1,0 +1,301 @@
+@import "../../../theme.less";
+
+.main{
+  width:100%;
+  position: absolute;
+  top: 0.2rem;
+  left: 0;
+  right: 0;
+  bottom: 1.2rem;
+}
+.fl{
+  float: left;
+}
+.fr{
+  float:right;
+}
+.trip{
+  width:90%;
+  padding-top:0.3rem;
+  margin:0 auto;
+  position: relative;
+}
+.cityImg{
+  // background:url('../TripDetails/img/trip-img.png');
+  background-repeat: no-repeat;
+  background-size:100% 100%;
+  height:5.3rem;
+  padding:0.3rem;
+}
+
+.tripWill{
+  padding:0.1rem 0.3rem;
+  width:90%;
+  position:relative;
+  margin:0.2rem auto 0;
+  .css_font_style1;
+}
+.refTripWill{
+  .tripWill;
+  .css_border_top;
+}
+.row{
+  font-size: @d_font_h1;
+  width: 100%;
+  height: auto;
+  display: table;
+  margin: @d_space_small 0;
+}
+.left{
+  display: table-cell;
+  vertical-align: middle;
+  width:0.2rem;
+  height: auto;
+}
+.sign{
+  width:0.15rem;
+  height: 0.35rem;
+  background: rgba(126,142,131,0.85);
+}
+
+.right{
+  padding-left: 0.1rem;
+  display: table-cell;
+  vertical-align: middle;
+  font-size: @d_font_h1;
+}
+
+.line{
+  padding-left: @d_space_center;
+  width: 100%;
+  height: auto;
+}
+.tripTitle{
+  font-size: @d_font_h1;
+  margin-top:0.4rem;
+  text-align: center;
+  text-shadow: @t_shadow;
+}
+.SWImg{
+  width:100%;
+  height:100%;
+}
+.leaderFace{
+  .teamImg;
+}
+.bg{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 100%;
+  .css_img;
+}
+.teamImg{
+  position: relative;
+  background: rgba(0, 0, 0, 0.51);
+  display: block;
+  float:left;
+  margin:0 0.1rem 0.1rem;
+  width:1rem;
+  height:1rem;
+  border-radius: 50%;
+}
+.teamBox{
+  width: 90%;
+  margin: 0.1rem auto;
+  padding: 0 0.3rem;
+}
+.teamBox:after{
+  content: '';
+  display: block;
+  height:0;
+  clear:both;
+}
+.tripImg{
+  width: 7.65rem;
+  height: 4.85rem;
+  border-radius: 0.2rem;
+  position:relative;
+}
+.faceImg{
+  overflow: hidden;
+  float: left;
+  width: 6rem;
+  height:1.1rem;
+}
+.MoreFriends{
+  float:right;
+  margin-top:0.2rem;
+  width:0.8rem;
+  height:0.8rem;
+  // background:url('../../index/TripDetails/img/more.png');
+  background-repeat: no-repeat;
+  background-size:100% 100%;
+  background-size: cover;
+}
+.joinTrip{
+  width:100%;
+  height: 1.2rem;
+  line-height: 1.2rem;
+  // background:url('../../../main/index/MyLeaderTeam/img/share_bg.png');
+  background-repeat: no-repeat;
+  background-size:cover;
+  text-align: center;
+  position: absolute;
+  left:0;
+  bottom:0;
+}
+.flightPlay{
+  .css_border_bottom;
+  .css_font_style1;
+  padding:0.1rem 0;
+  span{
+    .css_font_style1;
+  }
+}
+
+.play{
+  height:0.8rem;
+  line-height:0.8rem;
+}
+.time{
+  .play;
+  margin-top:0.1rem;
+  span{
+    .css_font_style1;
+  }
+}
+
+.goPlay{
+  text-align: center;
+}
+.flightPlan:after{
+  content:'';
+  display: block;
+  height:0;
+  clear:both;
+}
+.flightTime{
+  height:0.8rem;
+  line-height:0.8rem
+
+}
+.FlightFriends{
+  .css_font_style1;
+  padding:0.05rem 0.3rem;
+  margin:0 auto;
+  width:90%;
+}
+.wfPlan{
+  font-weight:normal;
+  color:#391400;
+  padding:0.1rem 0;
+}
+.hgTime{
+  float:left;
+  span{
+    font-weight: normal;
+  }
+}
+.hg{
+  float: left;
+  // background: url('../ticket/MoreFlights/img/start.png');
+  background-repeat: no-repeat;
+  background-size:100% 100%;
+  width:0.8rem;
+  height:0.8rem;
+  margin-right:0.2rem;
+}
+.yh{
+  .hg;
+  // background: url('../ticket/MoreFlights/img/end.png');
+  background-repeat: no-repeat;
+  background-size:100% 100%;
+}
+.hbPlan{
+  float:left;
+  font-weight:normal;
+  color:#391400;
+}
+.hbNum{
+  float:right;
+  span{
+    .css_font_style1;
+    font-size: @d_font_h2;
+  }
+}
+.mhNum{
+  padding-left: @d_space_center;
+  margin-bottom: @d_space_small;
+  font-size: @d_font_h2;
+}
+.leaderName{
+  .leaderPerson;
+  width:2.6rem;
+  margin-right: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.leaderPerson{
+  float:left;
+  margin-top:0.3rem;
+  margin-right:0.3rem;
+  .css_font_style1;
+  font-size: @d_font_h1;
+}
+.leaderFace{
+  float:left;
+}
+.mhPlan{
+  font-size: @d_font_h1;
+  font-weight: bold;
+}
+
+.invite-logo {
+  position: absolute;
+  top: 0.3rem;
+  right: 0.8rem;
+  // background-image: url("../../index/MyLeaderTeam/img/share.png");
+  display: inline-block;
+  background-size: 100% 100%;
+  height: 0.6rem;
+  width: 0.6rem;
+  vertical-align: middle;
+}
+
+
+.flightArrow{
+  width:1rem;
+  height:0.3rem;
+}
+.leader{
+  float:left;
+}
+.signUp{
+  float:right;
+  margin-top:0.2rem;
+  span{
+    .css_font_style1;
+  }
+
+}
+.clearfix:after{
+  content:'';
+  display: block;
+  height:0;
+  clear:both;
+}
+
+.PlanHeader{
+  margin: @d_space_small 0.3rem;
+  font-size: @d_font_h1;
+  width: 9.6rem;
+  height: auto;
+  display: table;
+}

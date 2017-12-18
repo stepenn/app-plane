@@ -1,0 +1,44 @@
+@import "../../theme.less";
+.main{
+  width: 100%;
+  height: 100%;
+  .css_font_single;
+}
+.row{
+  width: 100%;
+  position: relative;
+}
+.cell{
+  padding: 0 @d_space_center;
+  width: 100%;
+  box-sizing: border-box;
+}
+.state{
+  .css_border_top;
+  width: 100%;
+  background: @c_rgba;
+  text-align: right;
+  padding: @d_space_small @d_space_center;
+  overflow: hidden;
+}
+
+.rowContent{
+  float: right;
+  width:1.95rem;
+  height: 0.9rem;
+  line-height: 0.9rem;
+  text-align: center;
+  // background-image: url("../user/images/btn_icon.png");
+  background-size: cover;
+}
+
+.date{
+  float: left;
+  width:auto;
+  height: 0.8rem;
+  line-height: 0.8rem;
+  text-align: left;
+  .css_font_style1;
+  font-size: @d_font_h2;
+}
+

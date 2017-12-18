@@ -1,0 +1,99 @@
+@import "../theme.less";
+.testFont{
+  color: @c_app;
+  font-size: 0.45rem;
+}
+.bar_bg{
+  display: table;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.tableCell{
+  .css_font_style1;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  font-size: @d_font_h3;
+}
+.tableCellA{
+  .tableCell;
+  font-size: @d_font_h0;
+}
+.mainContextA{
+  width: 100%;
+  position: absolute;
+  top:0;
+  left: 0;
+  bottom: 0;
+}
+.mainContext{
+  .mainContextA;
+  visibility: hidden;
+}
+.block{
+  position: absolute;
+  bottom: 0.4rem;
+  width: 1rem;
+  line-height: 1.5rem;
+  color: #ffffff;
+  text-align: center;
+}
+.blockSelect,.blockSelectSec,.go{
+  position: relative;
+  // background-image:url('../main/index/img/message.png');
+  background-repeat: no-repeat;
+  background-size:100% 100%;
+  width:1.2rem;
+  height:1.2rem;
+}
+.blockSelectSec{
+  // background-image:url('../main/index/img/personCenter.png');
+  background-repeat: no-repeat;
+  background-size:100% 100%;
+}
+.demo{
+  .block;
+  display: none;
+  right: 0;
+  left: 0;
+  width:1.5rem;
+  bottom:0;
+  margin: auto;
+  background-color: #ffe35f;
+  border: 1px solid #00B7FF;
+  border-radius:0.5rem 0.5rem 0 0;
+  color: #ff0000;
+
+}
+.go{
+  .block;
+  left: 0.5rem;
+  // background-image:url('../main/index/img/Set.png');
+  background-repeat: no-repeat;
+  background-size:100% 100%;
+}
+.goList{
+  left: 0.5rem;
+  .block;
+  bottom: 0.5rem;
+}
+.hidden{
+  display: none;
+}
+.leaderTeam{
+  .block;
+  width:2rem;
+  right:0;
+  bottom:0;
+  line-height: 0;
+  height:2rem;
+}
+.myTeam{
+  display: block;
+  margin:0 auto 0.15rem;
+  width:1.5rem;
+  height:1.5rem;
+}

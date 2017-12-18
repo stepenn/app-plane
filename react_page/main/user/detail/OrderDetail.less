@@ -1,0 +1,45 @@
+@import "../../../theme.less";
+.main{
+  width: 100%;
+  height: 100%;
+}
+.content{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: @h_bottom;
+}
+.refContent{
+  .content;
+  bottom: 0;
+}
+.bottom{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: @h_bottom;
+  line-height:@h_bottom;
+  font-size: @d_font_h2;
+  text-align: center;
+  color: @c_title_black;
+  background: @c_color_bg;
+}
+.refBottom{
+  display: none;
+}
+
+.desc{
+  padding: 0.25rem 0;
+  margin: 0.25rem;
+  width: 9.5rem;
+  height: @h_bottom;
+  line-height:@h_bottom;
+  font-size: @d_font_h2;
+  text-align: center;
+  color: @c_title_black;
+  background: @c_color_bg;
+}
+
+

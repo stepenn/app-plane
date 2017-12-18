@@ -1,0 +1,47 @@
+
+@import "../../theme.less";
+.main{
+  color: @c_app;
+  font-size: @d_font_h1;
+}
+
+.bar_bg{
+  display: table;
+  height: 1.05rem;
+  width: 100%;
+  // background-image: url('../index/img/index-navbg.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+}
+.tableCell{
+  .css_font_style1;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  font-size: @d_font_h3;
+}
+.tableCellA{
+  .tableCell;
+  text-shadow: @t_shadow;
+  // background: url('../index/img/active1.png');
+  background-repeat:  no-repeat;
+  background-position: 1.2rem;
+  font-size: @d_font_h0;
+}
+.mainContextA{
+  width: 100%;
+  position: absolute;
+  top: 1rem;
+  left: 0;
+  bottom: 0;
+}
+.mainContext{
+  .mainContextA;
+  visibility: hidden;
+}
+
+.barActivity{
+  background-size:32px 32px;
+
+}

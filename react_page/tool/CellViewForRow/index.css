@@ -1,0 +1,115 @@
+.main {
+    width: 100%;
+    font-size: 0.4rem;
+    background: #ffffff;
+
+}
+.line{
+    width: 96%;
+    margin-left:2%;
+    margin-right:2%;
+    height: 1px;
+    background: #e8e8e8;
+}
+
+.rowTop {
+    width: 95%;
+    padding-left: 2.5%;
+    height: 1rem;
+    position: relative;
+}
+
+.rowTopItem {
+    width: 50%;
+    height: 100%;
+    float: left;
+
+}
+
+.rowTopItemTitle {
+    composes: rowTopItem;
+    line-height: 1rem;
+    height: 1rem;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.sign{
+    line-height: 1rem;
+    height: 1rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: right;
+    color: #000000;
+}
+.signHint{
+    composes: sign;
+    color: #a7a7a7;
+}
+.sign_value1{
+    composes: sign;
+    color: #999999;
+
+}
+.sign_value2{
+    composes: sign;
+    height: 0.6rem;
+    line-height: 0.6rem;
+    color: #000000;
+}
+.sign_value2Default{
+    composes: sign_value2;
+    color: #0080ff;
+}
+.icon{
+    width: 4.0rem;
+    float: right;
+    padding: 0 0 0 0;
+    margin-top: 0.2rem;
+    color: #0485e0;
+}
+.sign_value5{
+    composes: sign;
+    float: right;
+    margin-top: 0.2rem;
+    border: 1px solid #0080ff;
+    border-radius: 0.4rem;
+    padding: 0 0.2rem;
+    color: #0080ff;
+    line-height: 0.6rem;
+    height: 0.6rem;
+    text-align: center;
+    font-size: 0.35rem;
+
+}
+.rowBottom {
+    background: #ffffff;
+    width: 100%;
+}
+.delImg{
+    width: 0.6rem;
+    height: 0.6rem;
+    float: right;
+
+}
+.clear{
+    clear: both;
+}
+.star{
+    height: 0.3rem;
+    width: 0.3rem;
+}
+.triangle{
+    height: 0.4rem;
+    width: 0.4rem;
+    margin-top: 0.1rem;
+    float: right;
+}
+.close{
+    position: absolute;
+    left: 2.7rem;
+    width: 0.5rem;
+}

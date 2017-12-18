@@ -1,0 +1,48 @@
+@import "../../theme";
+.infor{
+  margin: @d_space_center;
+  width: 9.3rem;
+  height: auto;
+  background: @c_rgba;
+  .css_font;
+}
+
+.orderInfor{
+  .css_border_bottom;
+  padding: 0.25rem @d_space_center;
+  width: 9.3rem;
+  font-size: @d_font_h2;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.leftTitle{
+  float: left;
+  width: 25%;
+  height: auto;
+}
+.refLeftTitle{
+  composes: leftTitle;
+  height: 0.8rem;
+  line-height: 0.8rem;
+}
+.rightTitle{
+  .leftTitle;
+  float: right;
+  width: 75%;
+  text-align: right;
+}
+
+.exit{
+  float: right;
+  width: 2rem;
+  font-size: @d_font_h3;
+  text-align: center;
+  height: 0.8rem;
+  line-height: 0.8rem;
+  // background-image: url("../user/images/DelBG_icon.png");
+  background-size: cover;
+}
+.hidden{
+  display: none;
+}
+

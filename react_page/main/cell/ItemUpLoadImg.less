@@ -1,0 +1,35 @@
+@import "../../theme.less";
+.imgArea{
+    width: 100%;
+    height: auto;
+    padding: @d_space_center;
+    overflow:hidden;
+    position: relative;
+}
+.imgItemBg{
+    float: left;
+    position: relative;
+    height: 2.3rem;
+    width: 2.3rem;
+    margin-left: 0.02rem;
+}
+.imgItem {
+    .imgItemBg;
+    margin-left: 0.02rem;
+    margin-top: @d_space_small;
+    position: relative;
+    height: 2.05rem;
+    width: 2.05rem;
+background: none;
+}
+.refImgItem{
+    .imgItemBg;
+    padding: 0;
+    margin-top: @d_space_center;
+    margin-right: @d_space_center;
+    height: 1.65rem;
+    width: 1.65rem;
+    // background-image: url("../user/images/addimg.png");
+    background-size: cover;
+    border-radius: @d_space_center;
+}

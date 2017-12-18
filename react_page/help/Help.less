@@ -1,0 +1,135 @@
+@import "../theme.less";
+//填充满上级布局
+.css_layout_full{
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  right: 0rem;
+  bottom: 0rem;
+}
+//填充满上级布局
+.contentFull{
+  .css_layout_full;
+
+  overflow:hidden;
+}
+.contentWhite{
+  position: absolute;
+  .css_layout_full;
+  background: @c_bg_white;
+}
+
+.contentBar{
+  .css_layout_full;
+  top:@d_bar_height;
+}
+.contentBarWhite{
+  position: absolute;
+  .contentBar;
+  background: @c_bg_white;
+}
+.contentBarView{
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  right: 0rem;
+  height: @d_bar_height ;
+
+}
+.bar_bg{
+  height: 100%;
+  background-color: #a0611c;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.bar_back{
+  position: absolute;
+  margin: auto;
+  height: 1.0rem;
+  width: 1.0rem;
+  left: 1.0rem;
+  top: 0;
+  bottom: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bar_action{
+  .bar_back;
+  left: auto;
+  right: 1rem;
+}
+.bar_title{
+  .css_font_style1;
+  position: absolute;
+  line-height:@d_bar_height;
+  left: 2rem;
+  right: 2rem;
+  text-align: center;
+  font-weight: bolder;
+  text-shadow: @t_shadow;
+  -webkit-text-stroke: 0.1px #895d2e;
+}
+.contentBG_yellow{
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  // background-image: url("../images/bg_yellow.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  pointer-events: none;
+}
+
+.contentBorder{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  pointer-events: none;
+}
+
+.contentBorderBase{
+  position: absolute;
+  // background-image: url("../images/borderTop.png");
+  background-repeat: no-repeat;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.contentBorderTop{
+  .contentBorderBase;
+  // background-image: url("../images/borderTop.png");
+  bottom: auto;
+  height: @border_width;
+  background-size: 100% @border_width;
+
+}
+.contentBorderBottom{
+  .contentBorderBase;
+  // background-image: url("../images/borderTop.png");
+  top: auto;
+  height: @border_width;
+  background-size: 100% @border_width;
+}
+.contentBorderLeft{
+  .contentBorderBase;
+  // background-image: url("../images/borderLeft.png");
+  right: auto;
+  width: @border_width;
+  background-size:  @border_width 100%;
+}
+.contentBorderRight{
+  .contentBorderBase;
+  // background-image: url("../images/borderRight.png");
+  left: auto;
+  width: @border_width;
+  background-size:  @border_width 100%;
+}

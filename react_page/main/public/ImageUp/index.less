@@ -1,0 +1,115 @@
+@import "../../../theme";
+
+@img_w : 100%;
+@close_w : 30%;
+.img{
+  background: none;
+  position: absolute;
+  display: block;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  width: @img_w;
+  height: @img_w;
+
+}
+.imgSelect{
+  position: absolute;
+  width: @img_w;
+  height: @img_w;
+}
+.imgSuccess{
+  position: absolute;
+  left: 0.2rem;
+  right: 0.2rem;
+  top: 0.2rem;
+  bottom: 0.2rem;
+}
+
+.close{
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: @close_w;
+  height: @close_w;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+@-webkit-keyframes ball_beat {
+  50% {
+    opacity: 0.2;
+    -webkit-transform: scale(0.75);
+    transform: scale(0.75);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes ball_beat {
+  50% {
+    opacity: 0.2;
+    -webkit-transform: scale(0.75);
+    transform: scale(0.75);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+.ballBeat {
+  background-color: #a8a8a8;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  display: inline-block;
+  -webkit-animation: ball_beat 2s 0s infinite linear;
+  animation: ball_beat 2s 0s infinite linear;
+}
+
+.ballBeat2 {
+  composes: ballBeat;
+  margin-left: 3px;
+  -webkit-animation-delay: 0.35s !important;
+  animation-delay: 0.35s !important;
+}
+.ballBeat3 {
+  composes: ballBeat2;
+  -webkit-animation-delay: 0.35s !important;
+  animation-delay: 0.35s !important;
+}
+.loadCenter{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 36px;
+  height: 10px;
+}
+.frame{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 0.2rem;
+
+}
+
+

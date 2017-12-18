@@ -1,0 +1,50 @@
+@import "../../../theme";
+
+.secCon{
+  z-index: 0;
+  width:100%;
+  overflow:hidden;
+  padding-top:0.5rem;
+}
+.chooseDay{
+  margin-top:@d_space_center;
+  text-align: center;
+}
+
+.timeList{
+  display: inline-block;
+  border:1px solid @c_font_dark;
+  padding:@d_space_small;
+}
+.timeActive{
+  .timeList;
+  border:1px solid @c_font_yellow;
+}
+
+.content {
+  width: 2000rem;
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  -ms-transition-property: -ms-transform;
+  -o-transition-property: -o-transform;
+  transition-property: transform;
+  -webkit-transition-duration: 300ms;
+  -moz-transition-duration: 300ms;
+  -ms-transition-duration: 300ms;
+  -o-transition-duration: 300ms;
+  transition-duration: 300ms;
+}
+
+.content__disable-transition {
+  -webkit-transition-duration: 0ms;
+  -moz-transition-duration: 0ms;
+  -ms-transition-duration: 0ms;
+  -o-transition-duration: 0ms;
+  transition-duration: 0ms;
+}
+.content_page {
+  display: block;
+  float: left;
+  height: 100%;
+  position: relative;
+}

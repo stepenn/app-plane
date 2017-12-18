@@ -1,0 +1,155 @@
+@import "../../theme.less";
+.main{
+  padding:@d_padding_v1;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+}
+*{
+	font-weight: bold;
+	color: #d7981d;
+}
+
+.hideText(){
+	overflow-y: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.listitem div{
+	// display: inline-block;
+	display: table-cell;
+	vertical-align: middle;
+	overflow: hidden;
+}
+
+.cell{
+	margin: 0 @d_space_center;
+	height: auto;
+	width: 93%;
+	border-bottom: 1px solid rgba(40%, 40%, 40%, 0.2);
+}
+.listitem{
+	display: table;
+	width: 100%;
+	height: 1.2rem;
+	padding: @d_space_small 0;
+}
+
+.listitem_avatar{
+	width: 1.4rem;
+	position: relative;
+	padding-left: 0.1rem;
+	padding-right: .4rem;
+	// padding-left: 1rem;
+	// padding-right: 1.2rem;
+	margin-top: .2rem;
+	text-align: center;
+	@size: .7rem;
+	& .listitem_avatar__ring{
+		position: absolute;
+		width: @size+.2rem;
+		height: @size+.2rem;
+		background-size: cover;
+	}
+	img{
+		margin-left: 0;
+		margin-top: .1rem;
+		width: @size;
+		height: @size;
+		border-radius: 50%;
+	}
+}
+
+.listitem_content{
+	width: 4.2rem;
+	&:before{
+		content:'';
+		display: inline-block;
+		height: 100%;
+		vertical-align: middle;
+	}
+	.listitem_nickname{
+		// .commentMargin(.5rem);
+		.commentMargin;
+	}
+	.listitem_nickname__comment{
+		.commentMargin;
+	}
+}
+
+// .commentMargin(@val: .1rem){
+.commentMargin(@val: .05rem){
+	display: inline-block;
+	width: 100%;
+	font-size: 0.4rem;
+	vertical-align: middle;
+	margin-bottom: @val;
+	.hideText;
+}
+
+.listitem_message{
+	width: 100%;
+	height: auto;
+	font-size: @d_font_h3;
+}
+
+.listitem_end{
+	position: relative;
+	// right: 1rem;
+	text-align: center;
+	// margin-top: .2rem;
+	// margin-left: 0.4rem;
+	// width: 200px;
+	// text-align: center;
+}
+
+.listitem_end__text{
+	display: block;
+	// margin-top: .15rem;
+	margin-right: .1rem;
+	text-align: center;
+}
+
+.listitem_end__button{
+	float: right;
+	width: 200px;
+}
+
+.listitem_end button{
+	&:avtive{
+		border-style: inset
+	}
+	// float: right;
+	// width: 70px;
+	margin-right: @d_space_small;
+	width: 1.5rem;
+	height: .7rem;
+	border: 1px;
+
+	color: #d7981d;
+}
+
+.listitem_end_icon{
+	position: absolute;
+	right: 1rem;
+	margin-top: .2rem;
+	margin-left: .4rem;
+	// width: 200px;
+	text-align: center;
+}
+
+.listitem_endIcon{
+	padding-left: .4rem;
+	.listitem_endIcon__icon{
+		width: .7rem;
+		height: .7rem;
+	}
+	.listitem_endIcon__text{
+		// vertical-align: top;
+	}
+	img{
+		width: 100%;
+		height: 100%;
+	}
+}

@@ -1,0 +1,50 @@
+/bin/
+express 项目入口/启动文件
+
+
+/config/
+项目配置文件  (上线修改)
+
+/node_modules node库
+
+/public
+静态服务器,开放文件夹 xxx:port/app 可外网如此访问
+
+/public/app/FriendSelect.js 项目启动引用JS,配置项目 (5+的初始配置也在里面)
+
+/public/images/ 此目录,是用来放共享图片的 (注:我们项目中开发时,不直接放到这里,以require() 方式进行引入,进行打开)
+例:此图片的访问地址为  localhost:3000/images/iphonebg.jpg
+
+/public/project 此目录,为项目上线目录  目录内文件,由webpack生成  spa.js为项目压缩后代码(暂不分离react 公用库与我们编写的代码 ) spa.js.gz 由webpack压缩gzip而生成
+注:express开启压缩服务,可自动访问 .gz文件 (gzip) 或者,有ngx开记GZIP服务
+
+/react_page/ 此目录为我们项目开发目录, 此目录下的所有文件,会由webpack打包
+
+/react_page/anim 页面打开动画 (可配置自己想要的动画)
+/react_page/component 公用组件 (按钮/弹窗可放在这里)
+/react_page/help 辅助项目开发/ 用于打开路由/创建公用样式 获取参数
+/react_page/main 项目业务逻辑代码
+/react_page/tool 辅助工具
+/react_page/FriendSelect.js webpack打包入口
+
+/react_page/routes.js react-router 路由配置文件
+
+/react_page/theme.less 项目公用CSS样式  LESS
+
+
+/ReleaseProject  项目上线打包目录 (注:也可不用此目录,此目录用来打包兼容IE的方案)
+/routes express静态服务器的路由配置
+/views 页面模式(和我们无关.是服务器的东西,)
+/views/index.hbs 我们的项目入口,由此进入
+/views/pc.hbs 我们的项目入口,由此进入(pc打开)
+
+/app.js express项目配置
+/package.json node库依赖
+/webpack.Config.js webpack配置文件
+
+
+
+
+
+
+

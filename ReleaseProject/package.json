@@ -1,0 +1,21 @@
+{
+  "name": "zjrs",
+  "description": "浙江人社APP页面端",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "webpack --optimize-minimize --progress --colors --display-chunks & node ../bin/www"
+  },
+  "devDependencies": {
+    "clean-webpack-plugin": "^0.1.16",
+    "compression-webpack-plugin": "^0.4.0",
+    "html-webpack-plugin": "^2.28.0",
+    "webpack": "<=1.12.9"
+  },
+  "dependencies": {
+    "compression": "^1.6.2",
+    "compression-webpack-plugin": "^0.4.0",
+    "cssgrace": "^3.0.0",
+    "postcss-modules-values": "^1.3.0"
+  }
+}

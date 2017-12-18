@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>我想去{{city}}</title>
+    <style>
+        html {
+            font-size: 100px;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        * {
+            -webkit-box-sizing: inherit;
+            -moz-box-sizing: inherit;
+            box-sizing: inherit;
+        }
+        body {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            /*padding: .1rem;*/
+            margin: 0;
+            font-size: .2rem;
+            text-align: center;
+        }
+
+        img {
+            display: block;
+        }
+
+        .container {
+            height: 100%;
+            max-width: 5rem;
+            margin: 0 auto;
+        }
+
+        .img-container {
+            display: block;
+            min-height: 2rem;
+            height: 65%;
+            overflow: hidden;
+        }
+
+        .img-container img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .content-container {
+            padding: .1rem 0;
+        }
+
+        .content-container:after {
+            content: '';
+            display: table;
+            clear: both;
+        }
+
+        .city {
+            font-size: .3rem;
+            color: #ff0000;
+        }
+
+        .content {
+            display: block;
+            overflow: hidden;
+            margin-right: .05rem;
+            text-align: center;
+        }
+        .qr-code {
+            font-size: .12rem;
+            display: block;
+            float: right;
+            padding: .02rem;
+        }
+        .qr-code img {
+            width: 1.2rem;
+            height: 1.2rem;
+            margin-bottom: .1rem;
+        }
+        .qr-code span {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="img-container"><img src="{{cityImageUrl}}" alt="{{city}}"></div>
+    <div class="bottom-container">
+        <div class="qr-code">
+            <img src="{{qrcodeUrl}}" alt="扫码安装爱拼机">
+            <span>扫一扫，拼机享优惠！</span>
+        </div>
+        <div class="content">
+            我想去<span class="city">{{city}}</span>。加入我，来一场说走就走的旅行。
+        </div>
+    </div>
+</div>
+</body>
+</html>

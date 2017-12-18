@@ -1,0 +1,66 @@
+
+.bg{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background:rgba(0,0,0,.6);
+    pointer-events: auto;
+}
+.ShareBox{
+    position: absolute;
+    width:100%;
+    left:0;
+    bottom:0;
+    right: 0;
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    text-align: center;
+    padding: 0.2rem 0;
+}
+.container{
+    box-sizing: border-box;
+    text-align: center;
+}
+.weChatBox{
+    display: inline-block;
+    width:8rem;
+    height:2.5rem;
+    text-align: justify;
+}
+.shareTo{
+    display: inline-block;
+    margin:0 0.8rem 0.1rem 0;
+    text-align: center;
+}
+.weChatBox:after{
+    display:inline-block;
+    overflow:hidden;
+    width:100%;
+    height:0;
+    content:'';
+}
+.shareTo:last-child{
+    margin:0;
+}
+.shareImg{
+    width:1.4rem;
+    height:1.4rem;
+}
+.shareTxt{
+    font-size:0.3rem;
+}
+.title{
+    height:1.0rem;
+    line-height:1.0rem;
+}
+.show{
+    display: none;
+}
+.cancel{
+    height:1.0rem;
+    line-height:1.0rem;
+}

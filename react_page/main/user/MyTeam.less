@@ -1,0 +1,186 @@
+@import "../../theme.less";
+@d_height_head : 4rem;
+.main{
+  width: 100%;
+  height: 100%;
+  .css_font_single;
+  padding: 0 @d_space_center;
+  .css_font_style1;
+}
+.headArea{
+  width: 100%;
+  height: @d_height_head;
+  position: relative;
+}
+.headImg{
+  position: absolute;
+  top: @d_space_big;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 6rem;
+  height: 2.5rem;
+  // background-image: url("../user/images/huizhang.png");
+  background-size: cover;
+}
+.headTitle{
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 3rem;
+  width: 100%;
+  height: 1rem;
+  line-height: 1rem;
+  text-align: center;
+  font-size: @d_font_h1;
+  color: @c_font_yellow;
+}
+.content{
+  position: absolute;
+  top: @d_height_head;
+  left: 0;
+  right: 0;
+  bottom: 0.25rem;
+}
+
+.submit{
+  display: block;
+  // background-image: url("../user/images/submit_btn.png");
+  background-size: cover;
+  text-align: center;
+  margin-left: 3.5rem;
+  margin-top: 1rem;
+  width: 3rem;
+  height: 1.33rem;
+  line-height: 1.33rem;
+}
+
+.btmSubmit{
+  composes: submit;
+  position: absolute;
+  // background-image: url("../user/images/submit_btn.png");
+  background-size: cover;
+  text-align: center;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: @d_space_center;
+  width: 3rem;
+  height: 1.33rem;
+  line-height: 1.33rem;
+}
+.hidden{
+  display: none;
+}
+.cell{
+  margin-bottom: @d_space_center;
+  width: 100%;
+  position: relative;
+  padding: 0 @d_space_center;
+}
+
+.cellCon{
+  width: 100%;
+  position: relative;
+}
+.row{
+  width: 100%;
+  background: @c_rgba;
+  text-align: right;
+  padding: @d_space_small @d_space_small;
+  overflow: hidden;
+}
+.rowBtn{
+  float: right;
+  width:1.95rem;
+  height: 0.9rem;
+  line-height: 0.9rem;
+  text-align: center;
+  background-size: cover;
+  font-size: @d_font_h4;
+  margin-right: @d_space_small;
+}
+
+.leftText{
+  float: left;
+  width:auto;
+  height: 0.8rem;
+  line-height: 0.8rem;
+  text-align: center;
+}
+.showImg{
+  float: right;
+  margin-right: @d_space_small;
+  width:0.8rem;
+  height: 0.8rem;
+  border-radius: 100%;
+  background: #ff7b91;
+}
+.rightText{
+  .leftText;
+  float: right;
+  width:30%;
+  text-align: right;
+}
+.refRightText{
+  .rightText;
+  width:24%;
+  text-align: left;
+}
+
+
+.totalCell{
+  width: 100%;
+  position: relative;
+}
+.totalRow{
+  padding: @d_space_small @d_space_center @d_space_small @d_space_center;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  overflow: hidden;
+  background: @c_rgba;
+}
+.refTotalRow{
+  .totalRow;
+  padding-top: 0;
+}
+.left{
+  float: left;
+  padding-top: @d_space_center;
+  width: 35%;
+  height: auto;
+}
+.center{
+  .left;
+  padding-top: 0.25rem;
+  padding-bottom: 0.08rem;
+  .css_border_bottom;
+  width: 30%;
+  text-align: center;
+}
+.right{
+  .left;
+  float: right;
+  text-align: right;
+}
+
+.line{
+  width: 100%;
+  height: auto;
+  background: @c_rgba;
+  padding: 0 @d_space_center 0 @d_space_small;
+  text-align: right;
+}
+.font_big{
+  font-size: 0.7rem;
+}
+.font_small{
+  float: left;
+  font-size: @d_font_h2;
+}
+.refFont_small{
+  float: right;
+  font-size: @d_font_h2;
+}

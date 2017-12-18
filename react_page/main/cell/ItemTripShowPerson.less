@@ -1,0 +1,53 @@
+@import "../../theme";
+.cellArea{
+  margin: 0 @d_space_center;
+  width: 8.6rem;
+  height: auto;
+  box-sizing: border-box;
+  overflow: hidden;
+  .css_font;
+}
+.left{
+  float: left;
+  margin-top: 0.06rem;
+  background: @c_rgba;
+  text-align: center;
+  width: 0.4rem;
+  height: 0.4rem;
+  line-height: 0.4rem;
+  font-size: @d_font_h3;
+  border-radius: 100%;
+}
+.right{
+  float: right;
+  margin-bottom: @d_space_small;
+  width: 8rem;
+  height: auto;
+  overflow: hidden;
+}
+.name{
+  float: left;
+  width: 15%;
+  height: auto;
+  font-size: @d_font_h2;
+}
+.idCard{
+  .name;
+  width: 22%;
+}
+.num{
+  .name;
+  width: 63%;
+}
+
+.refName{
+  .name;
+  width:30%;
+}
+.refNum{
+  .name;
+  width: 70%;
+}
+.hidden{
+  display: none;
+}

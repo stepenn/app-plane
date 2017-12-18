@@ -1,0 +1,62 @@
+@value allCss: "../../all.css";
+@value color_white,color_title_gray from allCss;
+@value dimen_text,dimen_space_small from allCss;
+@value imgSize: 0.6rem;/* APP页面背影色*/
+.cell{
+    background:color_white;
+    composes: css_space_row from allCss;
+    composes: css_border_bottom from allCss;
+
+}
+.cellMain{
+    width: auto;
+    position: relative;
+
+}
+.img{
+    width: imgSize;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    background-size:imgSize  auto ;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.imgLeft{
+    composes: img;
+    left: 0;
+    right: auto;
+}
+.imgRight{
+    composes: img;
+    left: auto;
+    right: 0;
+
+}
+.center{
+    position: relative;
+    margin-left: imgSize;
+    margin-right: imgSize;
+    padding-left: 0.2rem;
+    padding-right: .2rem;
+
+}
+.centerLeftNone{
+    composes: center;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.inLine{
+    display: inline-block;
+    width: 60%;
+    font-size: dimen_text;
+    color: color_title_gray;
+}
+.inLineRight{
+
+    composes: inLine;
+    text-align: right;
+    width: 40%;
+}

@@ -1,0 +1,25 @@
+.show{
+    background:#000000;
+    filter:alpha(opacity=50);
+    -moz-opacity:0.5;
+    opacity:0.5;
+
+    position: fixed;
+    top: 0rem;
+    left: 0rem;
+    bottom: 0rem;
+    right: 0rem;
+    pointer-events: auto;
+    z-index: 11;
+}
+
+.hidden{
+    display: none;
+}
+.loadingImg{
+     width:25px;
+     height:25px;
+     margin: auto;
+     position: absolute;
+     top: 0; left: 0; bottom: 0; right: 0;
+ }

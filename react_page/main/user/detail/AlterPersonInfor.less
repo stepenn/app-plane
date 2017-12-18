@@ -1,0 +1,88 @@
+@import "../../../theme.less";
+.main{
+  width: 100%;
+  height: 100%;
+  .css_font;
+}
+
+.row{
+  margin:  1rem @d_space_big @d_space_center @d_space_big;
+  height: auto;
+  width: 9rem;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.left{
+  float: left;
+  width: 60%;
+  height: auto;
+  font-size: @d_font_h2;
+}
+.right{
+  float: left;
+  height: auto;
+  width: 40%;
+  text-align: right;
+}
+
+.text{
+  margin: 0 @d_space_big;
+  width: 9rem;
+  height: 2.5rem;
+  outline: none;
+  resize: none;
+  border-width: 0;
+  padding: @d_space_center @d_space_small;
+  box-sizing: border-box;
+  font-size: @d_font_h2;
+  background: none;
+  background: @c_rgba;
+}
+.refText{
+  .text;
+  height: 4.5rem;
+}
+
+.bar_action{
+  position: absolute;
+  margin: auto;
+  height: 1.0rem;
+  width: 1.0rem;
+  top: 0;
+  bottom: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  left: auto;
+  right: 1rem;
+}
+
+
+.lineCell{
+  background: @c_rgba;
+  margin-left:@d_space_big;
+  margin-top: @d_space_center;
+  padding: @d_space_center 0;
+  width: 9rem;
+  height: 1.5rem;
+  box-sizing: border-box;
+}
+.lineLeft{
+  display: table-cell;
+  vertical-align: middle;
+  padding-left: @d_space_big;
+  width: 7.5rem;
+  height: auto;
+  font-size: @d_font_h0;
+}
+.lineRight{
+  composes: lineLeft;
+  width: 0.7rem;
+  height: auto;
+}
+.lineImg{
+  width: 0.7rem;
+  height: 0.7rem;
+}
+.hidden{
+  display: none;
+}

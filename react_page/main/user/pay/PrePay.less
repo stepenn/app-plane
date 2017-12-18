@@ -1,0 +1,134 @@
+@import "../../../theme.less";
+.main{
+  .css_layout_full;
+  .css_font_style1;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+
+}
+.headAreaLayout{
+  text-align: center;
+  padding: @d_space_center;
+}
+.headArea{
+  display: inline-block;
+  // background:url('../../user/images/battle-title.png');
+  background-repeat: no-repeat;
+  background-size:100% 100%;
+  width: 7rem;
+  height:2.6rem;
+  text-align: center;
+  padding-top: 0.85rem;
+
+}
+.title{
+  width: 7rem;
+  text-align: center;
+}
+.headRow{
+  overflow: hidden;
+  width: 7rem;
+}
+.headSmallTitle{
+  float: left;
+  width: 2rem;
+  height: auto;
+  text-align: center;
+}
+.headSmallImg{
+  float: left;
+  width: 0.5rem;
+  height: 0.5rem;
+}
+
+.row{
+  padding: @d_space_center;
+}
+@inputHeight : 1rem;
+.cell{
+  display: table;
+  height: @inputHeight;
+  width: 8rem;
+  margin-top: @d_space_center;
+}
+.cellLeft{
+  display: table-cell;
+  // background-image: url("../../user/images/btn_icon.png");
+  background-size: 100% 100%;
+  background-position: center;
+  width: 3rem;
+  height: @inputHeight;
+  line-height: @inputHeight;
+  text-align: center;
+}
+.cellRight{
+  display: table-cell;
+  height: @inputHeight;
+  vertical-align: middle;
+
+}
+.input{
+  .css_font_single;
+  margin-left: @d_space_center;
+  width: 5rem;
+  box-sizing: border-box;
+  font-size: @d_font_h1;
+  outline: none;
+  border-radius: 0.5rem;
+  border-width: 0;
+  background: @c_font_dark;
+  padding: @d_space_small ;
+  font-size: @d_font_h1;
+
+}
+.people{
+text-align: right;
+  margin-right: @d_space_center;
+}
+.submit{
+  // background-image: url("../../user/images/submit_btn.png");
+  background-size: cover;
+  text-align: center;
+  color: @c_font_yellow;
+  margin-left: 3.5rem;
+  margin-top: 1rem;
+  width: 3rem;
+  height: 1.2rem;
+  line-height: 1.2rem;
+}
+.bar_action{
+  width: 1rem;
+  height: @d_bar_height;
+  position: absolute;
+  left: auto;
+  top: 0;
+  right: 1rem;
+  background: #ff64c2;
+}
+
+.inviteFriends{
+  width: auto;
+  height: @d_bar_height;
+  background: #cbffa5;
+}
+
+.inviteLogo {
+  position: absolute;
+  top: 0.1rem;
+  right: 0.8rem;
+  // background-image: url("../../index/MyLeaderTeam/img/share.png");
+  display: inline-block;
+  background-size: 100% 100%;
+  height: 1rem;
+  width: 1rem;
+  vertical-align: middle;
+}
+.inviteText{
+  padding-left: @d_space_small;
+  width: 1rem;
+  height: @d_bar_height;
+  line-height: @d_bar_height;
+  font-size: @d_font_h2;
+  color: @c_font_yellow;
+}

@@ -1,0 +1,55 @@
+/*noinspection CssInvalidAtRule*/
+@value allCss: "../../all.css";
+/*noinspection CssInvalidAtRule*/
+@value dimen_desc from allCss;
+/*noinspection CssInvalidAtRule*/
+@value color_title_black from allCss;
+.cell{
+    height: auto;
+    /*noinspection CssUnresolvedClass*/
+    composes: css_space_row from allCss;
+    /*noinspection CssUnresolvedClass*/
+    composes: css_border_bottom from allCss;
+}
+
+.cellItem_show{
+    display: table-cell;
+    width: 1rem;
+    font-size: 0rem;
+    text-align: center;
+    vertical-align: middle;
+}
+.cellItem_hidden{
+    display: table-cell;
+    width: 0.2rem;
+    font-size: 0rem;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.celltitle_show{
+    display: table-cell;
+    /*noinspection CssInvalidPropertyValue*/
+    font-size: dimen_desc;
+    width: 9rem;
+    padding-left: 0rem;
+    vertical-align: middle;
+    /*noinspection CssInvalidPropertyValue*/
+    color: color_title_black;
+
+}
+
+.celltitle_redraw{
+    composes:celltitle_show;
+    width: 10rem;
+}
+
+.cellimg_icon_show {
+    /*noinspection CssInvalidPropertyValue*/
+    width:dimen_desc;
+    /*noinspection CssInvalidPropertyValue*/
+    height: dimen_desc;
+}
+.cellimg_icon_hidden{
+    display: none;
+}

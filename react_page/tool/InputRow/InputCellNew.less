@@ -1,0 +1,80 @@
+@import "../../theme.less";
+@d_input_height : 1.5rem;
+.row{
+    height: @d_input_height;
+    margin: @d_space_small @d_space_center;
+    width: 9.3rem;
+    position: relative;
+
+    // background-image: url("../../main/user/images/input_PW.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.rowClear{
+    height: @d_title;
+    width: @d_title;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: @d_space_small;
+    right: @d_space_center;
+    left: auto;
+}
+.rowClearH{
+    display: none;
+}
+.rowInputLayout{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0.4rem;
+    bottom: 0;
+    margin: auto;
+}
+.rowInputTitle{
+    background: none;
+    width: 100%;
+    height: 0.6rem;
+    line-height: 0.6rem;
+    box-sizing: border-box;
+    padding-left: 1.2rem;
+    padding-right: 3rem;
+    font-size: @d_font_h2;
+    color: @c_font_yellow;
+    outline:none;
+    border: none;
+}
+
+//.rowInputTitle:focus{
+//    outline:none;
+//    border: none;
+//    border-radius: 0;
+//    border-bottom: 1px @c_font_yellow solid;
+//}
+.rowInputIcon:focus{
+    outline:none;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px @c_font_yellow solid;
+}
+
+
+.verBtn{
+    color: @c_font_yellow;
+    position: absolute;
+    line-height: 0.8rem;
+    height: 0.8rem;
+    width: 1.9rem;
+    top: 0.3rem;
+    right: 1.2rem;
+    text-align: center;
+    // background-image: url("../../main/user/images/btn_icon.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    font-size: @d_font_h4;
+}
+.verBtnNO{
+    .verBtn;
+    color: @c_desc;
+}

@@ -1,0 +1,103 @@
+@import "../../../theme.less";
+@d_high : 2.5rem;
+.main{
+  width: 100%;
+  height: 100%;
+}
+.logo{
+  display: block;
+  margin: 0.4rem auto 0;
+  width: 6rem;
+  height: @d_high;
+}
+.memberImg0{
+  border-radius: 100%;
+  width:2.5rem;
+  height:2.5rem;
+  float: left;
+  position: relative;
+}
+
+.bg{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width:2.5rem;
+  height:2.5rem;
+  border-radius: 100%;
+  .css_img;
+}
+.imgCon{
+  position: absolute;
+  top: 0.3rem;
+  left: 0.3rem;
+  bottom: 0.3rem;
+  right: 0.4rem;
+  margin: auto;
+  width: 1.9rem;
+  height: 1.9rem;
+  border-radius: 100%;
+}
+
+.memberImg1{
+  .memberImg0;
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:0;
+  margin:auto;
+
+}
+.memberImg2{
+  .memberImg0;
+  float:right;
+}
+.MemberList{
+  width:90%;
+  margin:0 auto;
+  height:4rem;
+  position: relative;
+}
+
+.invite-friends {
+  position: absolute;
+  top: 0;
+  right: .8rem;
+  height: 100%;
+  padding-top: .15rem;
+  z-index:99;
+  & .invite-logo {
+    // background-image: url("../../index/MyLeaderTeam/img/share.png");
+    display: inline-block;
+    background-size: 100% 100%;
+    height: 1rem;
+    width: 1rem;
+    vertical-align: middle;
+  }
+  & .invite-text {
+    color: #d7981d;
+    font-size: .4rem;
+    font-weight: bold;
+  }
+}
+.ListView{
+  position: absolute;
+  top:@d_high;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+}
+.inviteLogo {
+  position: absolute;
+  top: 0.3rem;
+  right: 0.8rem;
+  display: inline-block;
+  background-size: 100% 100%;
+  height: 0.6rem;
+  width: 0.6rem;
+  vertical-align: middle;
+}

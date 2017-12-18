@@ -1,0 +1,79 @@
+.bg {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 999999;
+
+}
+
+.main {
+    width: 2rem;
+    height: 2rem;
+    background: #000000;
+    pointer-events: auto;
+    border-radius: 10px;
+    border-style: solid;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+@-webkit-keyframes ripple {
+    0% {
+        -webkit-transform: scale(0.1);
+        transform: scale(0.1);
+        opacity: 1;
+    }
+
+    70% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 0.7;
+    }
+
+    100% {
+        opacity: 0.0;
+    }
+}
+
+@keyframes ripple {
+    0% {
+        -webkit-transform: scale(0.1);
+        transform: scale(0.1);
+        opacity: 1;
+    }
+
+    70% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 0.7;
+    }
+
+    100% {
+        opacity: 0.0;
+    }
+}
+
+.ball_scale_ripple {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 100%;
+    border: 2px solid #fff;
+    -webkit-animation: ripple 1s 0s infinite cubic-bezier(.21, .53, .56, .8);
+    animation: ripple 1s 0s infinite cubic-bezier(.21, .53, .56, .8);
+}

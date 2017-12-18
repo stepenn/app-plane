@@ -1,0 +1,29 @@
+注:下载完此项目
+第一步:npm install
+第二步:cd ReleaseProject
+第三步:npm install
+
+
+开发模式启动
+执行 npm start
+
+生产模式启动
+执行 cd ReleaseProject 目录 执行 npm start
+
+
+打开 http://localhost:端口号
+
+注:安卓低端机兼容方案,同IE8兼容
+注:ie8兼容方案 由ReleaseProject下webpack1.12.9版本,进行ES3压缩
+注:ie8兼容 react-router 版本 <=2.2.0版本
+注:ie8兼容 es6语法 参考项目中代码
+
+
+注:/ReleaseProject 目录下执行 npm start 执行顺序如下
+第一步:执行webpack打包
+第二步:打开express静态服务器
+第三步:打包中ing
+第四步:打包完成 文件生成在 /public/project/spa.js目录
+第五步:浏览器打开 http://localhost:port
+
+

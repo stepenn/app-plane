@@ -1,0 +1,199 @@
+.main {
+    background: #eeeff1;
+    width: 100%;
+    height: 100%;
+    font-size: 0.4rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+}
+.content {
+    position: absolute;
+    top: 1.2rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.mainTop{
+    position: absolute;
+    width: 100%;
+    height: 7rem;
+}
+.baiDu{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.baiDuCenter{
+     position: absolute;
+     width: 0.8rem;
+     height: 0.8rem;
+     margin: auto;
+     top: 0;
+     bottom: 0.4rem;
+     left: 0;
+     right: 0;
+ }
+.baiDuLocation{
+    position: absolute;
+    width: 0.8rem;
+    height: 0.8rem;
+    margin: auto;
+    bottom: 1.2rem;
+    left: 0.2rem;
+    background: #e2e2e2;
+    border: 1px #e2e2e2 solid;
+}
+.bottomViewTitle{
+    position: absolute;
+    width: 9.8rem;
+    top: 6rem;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    font-size: 0.35rem;
+    color: #0096ff;
+    background: #eeeff1;
+    padding-left: 0.2rem;
+    border-top: 1px #9b9c9e solid;
+}
+.bottomView{
+
+    position: absolute;
+    width: 100%;
+    top: 5.79rem;
+    bottom: 0;
+    background: #eeeff1;
+    overflow: scroll;
+}
+.bottomViewMain{
+}
+
+
+.row{
+    width: 9.6rem;
+    padding: 0.2rem;
+    background: #ffffff;
+    font-size: 0.4rem ;
+    border-bottom: 1px #eeeff1 solid;
+    position: relative;
+}
+.rowEnd{
+    width: 100%;
+    font-size: 0.4rem ;
+    color: #797979;
+    text-align: center;
+    height: 1rem;
+    line-height: 1rem;
+}
+.rowTitle{
+    font-size: 0.4rem ;
+    color: #000000;
+}
+.rowAddress{
+    margin-top: 0.1rem;
+    font-size: 0.35rem ;
+    color: #797979;
+}
+.rowImg{
+    width: 0.6rem;
+    height: 0.6rem;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    right: 0.2rem;
+}
+.barBG{
+    background: #0096ff;
+    color: #ffffff;
+    width: 10rem;
+    height: 1.2rem;
+    font-size: 0.4rem;
+    position: relative;
+}
+.barBGBack{
+    width: 0.8rem;
+    height: 0.8rem;
+    margin: 0.2rem;
+    position: absolute;
+}
+.barBGSearch {
+    width: 1.2rem;
+    line-height: 1.2rem;
+    text-align: center;
+    font-size: 0.4rem;
+    position: absolute;
+    right: 0;
+}
+.barBGInput {
+    height: 0.6rem;
+    background: #0096ff;
+    position: absolute;
+    width: 4.5rem;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top:0;
+    bottom: 0;
+    border: 1px #ffffff solid;
+    border-radius: 15px;
+}
+.barActionLeft{
+    position: relative;
+    height: 100%;
+    color: #ffffff;
+    width: 1.5rem;
+    float: left;
+    text-align: center;
+    font-size: 0.35rem;
+    line-height: 0.6rem;
+    border-radius: 10px 0 0 10px;
+}
+
+.barActionLeftA{
+    composes: barActionLeft;
+    background: #ffffff;
+    color: #000000;
+}
+.barActionCenter{
+    composes: barActionLeft;
+    border-radius: 0;
+}
+.barActionCenterA{
+    composes: barActionLeftA;
+    border-radius: 0;
+}
+.barActionRight{
+    composes: barActionLeft;
+    border-radius:  0 10px 10px 0;
+}
+.barActionRightA{
+    composes: barActionLeftA;
+    border-radius:  0 10px 10px 0;
+}
+.barActionLine{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 1px;
+    background: #ffffff;
+}
+
+.barBGClear{
+    width: 0.5rem;
+    height: 0.5rem;
+    position: absolute;
+    right: 1.3rem;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+
+}
+
+

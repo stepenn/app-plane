@@ -1,0 +1,74 @@
+@import "../../../theme.less";
+.bg{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    padding: @d_space_small;
+    text-align: center;
+}
+
+.siegeText{
+    background-color: transparent;
+    background-repeat:  no-repeat;
+    background-size: 100% 100%;
+    margin:0 auto;
+    width:5.1rem;
+    height:1.65rem;
+}
+.textArea{
+    background: none;
+    margin-top: 0.42rem;
+    padding-left:0.5rem;
+    padding-right: 0.5rem;
+    width:100%;
+    height:0.8rem;
+    font-size: @d_font_h1;
+    border:none;
+    outline:none;
+}
+
+.showContent{
+    border-top:1px #6a3706 solid;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 2rem;
+    bottom: 0rem;
+    text-align: left;
+}
+.showContent2{
+    position: absolute;
+    top: 2rem;
+    height: auto;
+    border-top:1px #6a3706 solid;
+    width: 100%;
+    z-index: 1;
+
+}
+.title{
+    margin: 0.2rem;
+    font-size: @d_font_h0;
+    .css_font;
+}
+.tag{
+    margin: 0.2rem;
+    border:1px #6a3706 solid;
+    border-radius: 0.1rem;
+    padding:@d_space_small @d_space_center ;
+    background-color: rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: inline-block;
+    .css_font_style1;
+}
+
+.actionLayout{
+    text-align: center;
+}
+.action{
+    display: inline-block;
+    margin: 0.2rem;
+}

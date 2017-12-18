@@ -1,0 +1,48 @@
+
+.wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+.hasData{
+    display: none;
+    pointer-events: none;
+    width: 0;
+    height: 0;
+}
+.noData{
+    composes: wrapper;
+}
+.noDataImg{
+    position: absolute;
+    top: 2rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 3rem;
+}
+.noDataDesc{
+    position: absolute;
+    top: 5rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 40px;
+    line-height: 40px;
+    font-size: 12px;
+    text-align: center;
+    color:#999999
+}
+.scroller {
+    margin: 0;
+    padding: 0;
+}
+.more{
+    height: 40px;
+    line-height: 40px;
+    font-size: 12px;
+    text-align: center;
+    color:#999999
+}

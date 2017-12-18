@@ -1,0 +1,10 @@
+/node_modules
+/.idea
+/runtime
+/ReleaseProject/node_modules
+.history
+.npm
+.vscode
+.directory
+test
+mochawesome-report

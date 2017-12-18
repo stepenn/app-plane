@@ -1,0 +1,101 @@
+@-webkit-keyframes ball_beat {
+    50% {
+        opacity: 0.2;
+        -webkit-transform: scale(0.75);
+        transform: scale(0.75);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@keyframes ball_beat {
+    50% {
+        opacity: 0.2;
+        -webkit-transform: scale(0.75);
+        transform: scale(0.75);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+.ballBeat {
+    background-color: #a8a8a8;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    display: inline-block;
+    -webkit-animation: ball_beat 2s 0s infinite linear;
+    animation: ball_beat 2s 0s infinite linear;
+}
+
+.ballBeat2 {
+    composes: ballBeat;
+    margin-left: 3px;
+    -webkit-animation-delay: 0.35s !important;
+    animation-delay: 0.35s !important;
+}
+.ballBeat3 {
+    composes: ballBeat2;
+    -webkit-animation-delay: 0.35s !important;
+    animation-delay: 0.35s !important;
+}
+.frame{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.circleFrame{
+    composes: frame;
+    border-radius: 100%;
+}
+.loadCenter{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 36px;
+    height: 10px;
+}
+.imgError{
+    display: block;
+    position: absolute;
+    background: none;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 32px;
+    height: 32px;
+}
+.hidden{
+    display: none;
+}
+.imgRight{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}

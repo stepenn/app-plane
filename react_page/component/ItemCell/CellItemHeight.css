@@ -1,0 +1,50 @@
+.cell{
+    background: #ffffff;
+    margin: 0px;
+    height: 1.5rem;
+    width: 100%;
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    border-color: #f3f3f3;
+    display: table;
+    vertical-align: middle;
+}
+
+.cellItem_show{
+    display: table-cell;
+    vertical-align: middle;
+    width: 1.5rem;
+    height: 1.2rem;
+    font-size: 0rem;
+    text-align: center;
+}
+.cellItem_hidden{
+    display: table-cell;
+    vertical-align: middle;
+    width: 0.2rem;
+    height: 1.5rem;
+    font-size: 0rem;
+    text-align: center;
+}
+
+.cellimg_icon_show {
+    width: 0.8rem;
+    height: 0.8rem;
+}
+.cellimg_icon_hidden{
+    display: none;
+}
+
+.celltitle_show{
+    display: table-cell;
+    font-size: 0.45rem;
+    color: #999999;
+    width: 6rem;
+    vertical-align: middle;
+}
+.celltitle_hidden{
+    display: table-cell;
+    font-size: 0.4rem;
+    width: 9.6rem;
+    vertical-align: middle;
+}

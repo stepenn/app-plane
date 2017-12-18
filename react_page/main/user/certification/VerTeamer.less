@@ -1,0 +1,86 @@
+@import "../../../theme.less";
+.main{
+  .css_layout_full;
+  .css_font_style1;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: @d_space_center @d_space_big;
+}
+.title{
+  padding: @d_space_center 0;
+  height: auto;
+  width: 100%;
+  font-size: @d_font_h1;
+  color: @c_title_black;
+}
+.input{
+  .title;
+  background: @c_rgba;
+  padding: @d_space_center @d_space_small;
+  border-width: 0;
+  .css_font_style1;
+}
+
+.row{
+  height: auto;
+  width: 100%;
+  overflow: hidden;
+}
+
+.refRow{
+  display: table;
+  height: auto;
+  width: 100%;
+  background: @c_rgba;
+}
+.left{
+  display: table-cell;
+  vertical-align: middle;
+  width: 90%;
+  padding: @d_space_center @d_space_small;
+  border-width: 0;
+  background: none;
+  font-size: @d_font_h1;
+  .css_font_style1;
+}
+.right{
+  display: table-cell;
+  vertical-align: middle;
+  width: 10%;
+  height: auto;
+}
+.img{
+  width: 0.6rem;
+  height: 0.6rem;
+}
+.sexBtnBg{
+  float: left;
+  width:2.3rem;
+  height: 1.05rem;
+  line-height: 0.9rem;
+  text-align: center;
+  // background-image: url("../../user/images/btn_icon.png");
+  background-size: cover;
+  font-size: @d_font_h2;
+}
+.sexBtnNoBg{
+  float: left;
+  width:2.3rem;
+  height: 1.05rem;
+  line-height: 0.9rem;
+  text-align: center;
+  font-size: @d_font_h2;
+}
+
+.submit{
+  display: block;
+  // background-image: url("../../user/images/submit_btn.png");
+  background-size: cover;
+  text-align: center;
+  margin-left: 3rem;
+  margin-top: 1rem;
+  width: 3rem;
+  height: 1.33rem;
+  line-height: 1.33rem;
+}

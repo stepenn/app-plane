@@ -1,0 +1,111 @@
+@import "../../../theme.less";
+@d_myPadding_big : 0.5rem;
+.main{
+  width: 100%;
+  height: 100%;
+  .css_font;
+}
+.alertCss{
+  .css_alertCss;
+}
+.row{
+  width: 9rem;
+  margin: 0 @d_myPadding_big;
+  height: auto;
+  padding-top: @d_space_center;
+  display: table;
+}
+.left{
+  display: table-cell;
+  vertical-align: middle;
+  width: 8rem;
+  font-size: @d_font_h1;
+}
+.right{
+  .left;
+  width: 1rem;
+  height: auto;
+}
+.img{
+  width: 0.6rem;
+  height: 0.6rem;
+}
+
+
+.signArea{
+  width: 9rem;
+  height: auto;
+  margin: 0 @d_myPadding_big;
+  box-sizing: border-box;
+  overflow:hidden;
+  background: @c_rgba;
+}
+
+.signItem{
+  float: left;
+  margin: 0.25rem;
+  width: 1.72rem;
+  height: 0.8rem;
+  position: relative;
+}
+
+.signItemDel{
+  position: absolute;
+  right: -0.2rem;
+  top: -0.2rem;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 100%;
+  // background-image: url("../../user/images/dele_icon.png");
+  background-size: cover;
+}
+
+.hidden{
+  display: none;
+}
+
+.signContent{
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 1.72rem;
+  height: 0.8rem;
+  line-height: 0.8rem;
+
+  .css_border;
+  font-size: @d_font_h3;
+  text-align: center;
+  border-radius: @d_space_small;
+  box-sizing: border-box;
+  background:@c_rgba;
+  .css_font_single;
+}
+.signContentA{
+  .signContent;
+  color: @c_white;
+}
+.signContentDel{
+  .signContent;
+  color: @c_title_gray;
+}
+
+.addImg{
+  width: 0.5rem;
+  height:0.5rem;
+  margin-left: 0.15rem;
+  margin-top: 0.075rem;
+}
+
+
+.bar_action{
+  position: absolute;
+  margin: auto;
+  height: 1.0rem;
+  width: 1.0rem;
+  top: 0;
+  bottom: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  left: auto;
+  right: 1rem;
+}

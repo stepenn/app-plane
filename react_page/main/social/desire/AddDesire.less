@@ -1,0 +1,76 @@
+.add-desire {
+  display: block;
+  text-align: center;
+  .wanna-go {
+    font-size: 20px;
+    font-weight: bold;
+    color: #d7981d;
+    position: relative;
+    top: -2px;
+  }
+  form {
+    margin: 2.5rem 0 1rem;
+  }
+  .input-wrapper {
+    display: inline-block;
+    position: relative;
+  }
+  input {
+    border-style: none;
+    border-bottom-style: solid;
+    border-bottom-color: #be8e60;
+    border-radius: 0;
+    font-size: 16px;
+    margin-left: 5px;
+    vertical-align: bottom;
+    width: 150px;
+    padding: .1rem;
+    background-color: transparent;
+    color: #6a3706;
+  }
+
+  .rules {
+    // background: url("../desire/images/bg-rules@2x.png");
+    background-repeat:  no-repeat;
+    background-size: 100% 100%;
+    padding: 1rem;
+    margin: 0 1rem;
+    color: #bbb;
+    text-align: left;
+
+    * {
+      color: #bbb;
+    }
+  }
+}
+
+.suggestion-list {
+  position: absolute;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  max-height: 200px;
+  text-align: left;
+
+  background-color: #e2c599;
+  color: #6a3706;
+}
+
+.suggestion-item {
+  display: block;
+  padding: .25rem;
+  border-bottom: 1px solid transparent;
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.balloon {
+  display: inline-block;
+  width: 1.1rem;
+  height: 1.5rem;
+  margin-right: .2rem;
+  // background-image: url("../../index/img/balloon.png");
+  background-size: 100% 100%;
+}
+

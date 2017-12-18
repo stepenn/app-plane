@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui">
+</head>
+<style>
+    body {
+        background: #00B7FF;
+    }
+
+    .bot {
+        position: fixed;
+        bottom: 0;
+        background: #1abc9c;
+    }
+
+</style>
+<body>
+
+<script>
+
+    function test() {
+       // alert(1);
+    }
+    function c() {
+//        alert(13);
+        document.getElementById('targetInput').focus()
+    }
+
+</script>
+<div class="bot"><input id="targetInput" onclick="c()"/>
+    <div onclick="test()">click</div>
+    <script>
+        //输入框获得焦点时，文字隐藏
+        document.getElementById("targetInput").focus(function () {
+            alert(11);
+        })
+        //输入框失去焦点时，文字显示
+        document.getElementById("targetInput").blur(function () {
+            alert(12);
+
+        })
+    </script>
+</div>
+</body>
+</html>

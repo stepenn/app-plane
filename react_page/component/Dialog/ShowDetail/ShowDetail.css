@@ -1,0 +1,42 @@
+.bg{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background:rgba(0,0,0,0.6);
+    pointer-events: auto;
+
+}
+.main{
+    font-size: 0.4rem;
+    width: 6rem;
+    height: 4rem;
+    top:50%;
+    background:#e8e8e8;
+    pointer-events: auto;
+    border-radius: 0.2rem;
+    margin: 50% auto;
+}
+.top{
+    color: #1c1c1c;
+    text-align: center;
+    font-size: 0.4rem;
+    line-height: 1rem;
+    height: 1rem;
+    width: 100%;
+}
+.content{
+    font-size: 0.45rem;
+    -webkit-appearance: none;
+    outline:none;
+    resize: none;
+    width: 5.3rem;
+    height: 2rem;
+    background: white;
+    border: 0;
+    color: #000;
+    padding: 0.3rem 0.3rem 0.3rem 0.4rem;
+}

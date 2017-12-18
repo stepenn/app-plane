@@ -1,0 +1,180 @@
+@import "../../theme";
+@d_with: 98%;/* cell宽*/
+@d_with_small: 80%;/* small_cell宽*/
+@d_with_full: 100%;/* small_cell宽*/
+.full{
+  width: auto;
+  height: auto;
+  margin: @d_space_small @d_space_center 0 @d_space_center;
+  padding-bottom: @d_space_small;
+  background: @c_rgba;
+  .css_font_style1;
+}
+.cellArea{
+  padding: 0;
+  margin: @d_space_small @d_space_center @d_space_small 0;
+  width: @d_with;
+  height: auto;
+  box-sizing: border-box;
+  display: table;
+}
+.goLeft{
+  display: table-cell;
+  vertical-align: middle;
+  width: 17%;
+  height: auto;
+  padding-left: @d_space_center;
+}
+.img{
+  width: 1rem;
+  height: 1rem;
+  border-radius: 100%;
+}
+.goRight{
+  padding: 0 @d_space_small @d_space_small @d_space_small;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  width: @d_with_small;
+  height: auto;
+  .css_border_bottom;
+}
+.title{
+  width: @d_with_full;
+  height: auto;
+  box-sizing: border-box;
+  text-align: left;
+  font-size: @d_font_h2;
+}
+.priceLine{
+  margin-left: @d_space_center;
+  width: @d_with;
+  height: auto;
+  overflow: hidden;
+}
+.priceTitle{
+  float: right;
+  width: auto;
+  height: 0.6rem;
+  line-height: 0.6rem;
+  font-size: @d_font_h2;
+  padding-right: @d_space_center;
+  margin-top: 0.2rem;
+}
+.price{
+  .priceTitle;
+  text-align: right;
+}
+
+.hidden{
+  display: none;
+}
+
+.selectImg{
+  float: left;
+  margin-right: @d_space_center;
+}
+.selectTitle{
+  .priceTitle;
+  margin-top: 0.2rem;
+}
+
+.timeCell{
+  width: @d_with_full;
+  height: auto;
+  overflow: hidden;
+}
+.leftCell{
+  float: left;
+  width: 35%;
+  padding-top: @d_space_small;
+  height: auto;
+  text-align: left;
+  font-size: @d_font_h1;
+}
+.centerCell{
+  .leftCell;
+  float: left;
+  width: 30%;
+  padding-top: 0;
+  padding-bottom: @d_space_small;
+  text-align: center;
+  font-size: @d_font_h3;
+  .css_border_bottom
+}
+.rightCell{
+  .leftCell;
+  float: right;
+  text-align: right;
+}
+.refCellArea{
+  .cellArea;
+  padding-top: 0;
+}
+.refLeftCell{
+  .leftCell;
+  font-size: @d_font_h2;
+  padding-top: @d_space_small;
+  width: 50%;
+}
+.refrightCell{
+  .rightCell;
+  font-size: @d_font_h2;
+  padding-top: @d_space_small;
+  width: 50%;
+}
+.thirLeftCell{
+  .leftCell;
+  padding-top: 0;
+  font-size: @d_font_h3;
+  width: 50%;
+}
+.thirRightCell{
+  .rightCell;
+  padding-top: 0;
+  font-size: @d_font_h3;
+  width: 50%;
+}
+
+.row{
+  padding: @d_space_center @d_space_center 0 @d_space_center;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.refRow{
+  .row;
+  padding-top: 0;
+}
+.left{
+  float: left;
+  padding-top: @d_space_center;
+  width: 35%;
+  height: auto;
+}
+.center{
+  .left;
+  padding-top: 0.25rem;
+  padding-bottom: 0.08rem;
+  .css_border_bottom;
+  width: 30%;
+  text-align: center;
+}
+.right{
+  .left;
+  float: right;
+  text-align: right;
+}
+
+.font_big{
+  font-size: 0.7rem;
+}
+.font_small{
+  float: left;
+  font-size: @d_font_h2;
+}
+.refFont_small{
+  float: right;
+  font-size: @d_font_h2;
+}

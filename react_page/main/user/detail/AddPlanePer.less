@@ -1,0 +1,44 @@
+@import "../../../theme.less";
+@h_btn : 1.2rem;
+@w_btn : 2.7rem;
+.main{
+  width: 100%;
+  height: 100%;
+}
+.photoArea{
+  font-size: @d_font_h2;
+  color: @c_font_yellow;
+  height: 2rem;
+  background: none;
+  position: relative;
+}
+.phoneBtn{
+  position: absolute;
+  top:0;
+  left: 0;
+  right:0;
+  bottom: 0;
+  margin: auto;
+  height: @h_btn;
+  line-height:@h_btn;
+  width: @w_btn;
+  text-align: center;
+  border-width: 0;
+  // background-image: url("../../user/images/btn_icon.png");
+  // background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+
+.submit{
+  // background-image: url("../../user/images/submit_btn.png");
+  background-size: cover;
+  text-align: center;
+  color: @c_font_yellow;
+  margin-left: 3.5rem;
+  margin-top: @d_space_center;
+  width: 3rem;
+  height: 1.3rem;
+  line-height: 1.3rem;
+}

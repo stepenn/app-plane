@@ -1,0 +1,76 @@
+@import "../../theme.less";
+.main{
+  width: 100%;
+  height: 100%;
+}
+.row{
+  margin:  @d_space_big @d_space_center @d_space_center @d_space_center;
+  height: auto;
+  overflow: hidden;
+}
+.left{
+  float: left;
+  width: 60%;
+  height: auto;
+  font-size: @d_font_h2;
+  color: @c_font_yellow;
+}
+.right{
+  float: left;
+  height: auto;
+  width: 40%;
+  text-align: right;
+  color: @c_font_yellow;;
+}
+
+.text {
+  background: @c_rgba;
+  // background-image: url("../user/images/textAreaBg.png");
+  background-size: cover;
+  margin: 0 @d_space_center @d_space_center @d_space_center;
+  width: 9.3rem;
+  height: 4rem;
+  font-size: @d_font_h2;
+  color: @c_font_yellow;
+  outline: none;
+  resize: none;
+
+  padding: @d_space_big;
+  box-sizing: border-box;
+}
+
+.styleRelate{
+  margin:  @d_space_center;
+  height: auto;
+  font-size: @d_font_h2;
+  color: @c_font_yellow;
+}
+
+.refRow{
+  .row;
+  margin-top: @d_space_center;
+}
+.relateInput{
+  float: left;
+  background: none;
+  // background-image: url("../user/images/input_PW.png");
+  background-size: cover;
+  height: 0.9rem;
+  outline: none;
+  width: 7rem;
+  font-size: @d_font_h2;
+  border-width: 0;
+  color: @c_font_yellow;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+.submit {
+  float: right;
+  // background-image: url("../user/images/submit_btn.png");
+  background-size: cover;
+  text-align: center;
+  color: @c_font_yellow;
+  width: 2.2rem;
+  height: 0.9rem;
+  line-height: 0.9rem;
+}
